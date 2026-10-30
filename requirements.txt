@@ -1,0 +1,5 @@
+PyYAML>=6.0
+edge-tts>=7.0
+yt-dlp>=2024.1
+# 可选：本地转写（约 300 MB，纯 CPU 可用）
+# faster-whisper>=1.0

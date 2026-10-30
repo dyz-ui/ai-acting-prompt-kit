@@ -1,0 +1,32 @@
+# ---- 环境 ----
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# ---- 产物 ----
+out/
+output/
+reference/
+*.mp4
+*.mp3
+*.wav
+*.srt
+!examples/**/*.srt
+prompt.txt
+*_sheet.jpg
+frames/
+
+# ---- 编辑器 / 系统 ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 密钥 ----
+.env

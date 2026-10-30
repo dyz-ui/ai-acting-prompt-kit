@@ -1,0 +1,196 @@
+# =============================================================================
+# 范本：30 秒双人对手戏《What About My Life》
+# 结构完全对齐原视频的四镜头 / 八维公式写法，台词为同情绪结构的原创英文对白
+# 参考影像气质：《海边的曼彻斯特》Randi 与 Lee 的街头对手戏（雪天、宽银幕、冷调）
+# =============================================================================
+
+project:
+  title: What About My Life
+  duration: 30
+  genre: 家庭剧情
+  style: 写实电影质感
+  aspect: "16:9"        # 必须加引号：YAML 会把 16:9 当成六十进制数算成 969
+  resolution: 1080p
+  camera: 宽银幕 20:9 构图，写实电影摄影，24fps 观感，轻微 35mm 胶片颗粒，浅景深
+  era: 当代，新英格兰小镇的冬末
+  location: 覆着残雪的社区停车场，背景是灰色木板房和一道低矮的石墙
+  lighting: 阴天柔光，整体冷调，人物面部保留一点暖色补光；雪地反光作为唯一补光
+  sound: 原生同步对白
+  ambience: 只有远处清雪车的低频和穿过衣领的风声，没有音乐
+  guardrail:
+    - 不出现任何字幕、片头片尾、台标、水印
+    - 不出现第三个人物，背景行人不可进入前景
+    - 两人始终保持相同面孔、年龄、服装、发型和相对站位
+    - 摄影机不做无动机的推拉摇移，不出现变焦
+    - 全片不下雪，只有地面积雪
+
+characters:
+  - id: woman
+    name: 女人
+    age: 38 岁
+    look: 金色齐肩短发，鼻尖和眼周发红，睫毛上有没擦干净的泪痕
+    costume: 红色格纹毛领外套，里面是米白色高领毛衣，双手没有手套
+    voice: 中低音，沙哑，情绪上来时句尾会破
+  - id: man
+    name: 男人
+    age: 41 岁
+    look: 深褐色短发，三天没刮的胡茬，眼窝深，眼下有青黑
+    costume: 深绿色旧皮夹克，深色高领毛衣，双手插在口袋里
+    voice: 低沉，语速慢，几乎不抬音量
+
+shots:
+  # ---------------------------------------------------------------- 镜头 1
+  - id: S1
+    start: 0.0
+    end: 3.7
+    framing: 中景双人，侧四分之三，两人相距约一米
+    camera_move: 固定机位，只有极轻微的手持呼吸感
+    focus: 女人
+    note: 不交代前情，直接从沉默开始，让观众先看见两人之间的距离
+    beats:
+      - start: 0.0
+        end: 3.7
+        who: 女人
+        objective: 确认对方还愿不愿意开口
+        emotion_curve: 强撑 → 迟疑
+        face_natural: 视线压在对方胸口位置，不上移；双唇向内压紧，下巴轻微抬起；吞咽一次，喉部可见起伏
+        face_au: [AU7:2, AU24:2, AU17:1]
+        gaze_body: 双手在身前交握，指节发白；肩膀不动，重心压在左脚
+        voice: 没有台词，只有鼻吸口呼，节奏偏快，吸气比呼气长
+        pause: 第 2.4 秒有一次明显的半口吸气，像要说话又咽回去
+        end_state: 目光仍未上移，嘴唇分开一条缝
+        forbidden: [不要微笑, 不要摇头, 不要提前流泪, 不要看镜头]
+
+  # ---------------------------------------------------------------- 镜头 2
+  - id: S2
+    start: 3.7
+    end: 23.0
+    framing: 女人近景，侧脸偏正面，男人在前景右侧虚焦（只露肩线和半张侧脸）
+    camera_move: 极缓慢地向前推了不到十公分，全程不切换机位
+    focus: 女人
+    note: 这是全片唯一需要拆五个节拍的镜头，所有情绪转折都发生在这一镜里
+    beats:
+      # 节拍 1：反击（用愤怒当保护层）
+      - start: 3.7
+        end: 6.5
+        who: 女人
+        objective: 把话头抢回来，让对方先退一步
+        emotion_curve: 愤怒（保护层）→ 更硬的愤怒
+        trigger_line: "You don't get to ask me that."
+        line: "You don't get to ask me that."
+        face_natural: 眉毛向内下压，眉心收拢出现竖纹；眼睛变窄，视线从对方胸口一路抬到眼睛；说 "ask" 时鼻翼张开，下颚张紧
+        face_au: [AU4:3, AU7:3, AU23:3, AU25:3, AU26:2]
+        gaze_body: 直视对方眼睛不闪避；上身微微前倾两指，右手从交握里抽出来握拳垂在身侧
+        voice: 音量比平时高两档，语速偏快，"that" 这个词重读，句尾不降调，最后一个词结束后立刻闭嘴
+        pause: 说完立刻闭嘴，压住下一次呼吸，停 0.35 秒
+        end_state: 嘴唇仍压紧，下巴抬起，视线钉在对方眼睛上
+        forbidden: [不要一开始就喊, 不要瞪大眼睛, 不要挥手, 不要后退, 不要流泪]
+
+      # 节拍 2：证明自己的牺牲（情绪开始自己往下走）
+      - start: 6.5
+        end: 11.5
+        who: 女人
+        objective: 让对方承认这些年是谁在扛
+        emotion_curve: 控诉 → 疲惫渗出来
+        trigger_line: "I gave up the years."
+        line: "I gave up the house. I gave up the years. I gave up everything I could carry."
+        face_natural: 说前两句时眉毛下压还在，但眼睑开始松开；说到 "the years" 时眉毛内侧第一次缓慢抬起，眉心同时挤出；嘴角向下拉，下唇轻微外翻
+        face_au: [AU4:2, AU15:2, AU1:2, AU17:2]
+        gaze_body: 视线第一次离开对方眼睛，落到对方肩膀，再回到眼睛；双手松开，垂在体侧，手指轻微发抖
+        voice: 音量降到中等，语速放慢，三个 "I gave up" 一次比一次轻，第三个 "gave up" 几乎只剩气声
+        pause: 每个 "I gave up" 之间停 0.4 秒，第三次停顿拉长到 0.7 秒
+        end_state: 嘴唇张开但没有声音，眼球向下移动一下又抬回来
+        forbidden: [不要哭出声, 不要瞪视, 不要转身, 不要用手抹脸]
+
+      # 节拍 3：愤怒出现裂缝
+      - start: 11.5
+        end: 16.5
+        who: 女人
+        objective: 把指责说出口，但其实在试探对方还在不在乎
+        emotion_curve: 愤怒 → 愤怒开始失效 → 委屈渗进来
+        trigger_line: "like it was nothing."
+        line: "And you still sat there like it was nothing."
+        face_natural: 前段眉毛还压着，说 "nothing" 时压眉突然松掉一半，眉毛内侧抬起，眼眶开始蓄水但不下落；下巴抖了一下，被咬住
+        face_au: [AU4:2, AU1:3, AU17:3, AU7:2]
+        gaze_body: 视线在对方眼睛和嘴之间来回两次；右手抬起一半又放下，最后抓住自己外套下摆
+        voice: 前半句音量还在，后半句"nothing"突然破音，音量掉下去，尾音发虚；吸气从鼻子变成嘴
+        pause: 说完 "nothing" 之后有 0.8 秒空白，只有风声，她张了张嘴没出声
+        end_state: 眼睛睁着，泪在眼眶里但没有落下，嘴唇微微发抖
+        forbidden: [不要在第一帧就落泪, 不要皱眉成愤怒到底, 不要低头, 不要笑]
+
+      # 节拍 4：声音第一次破裂
+      - start: 16.5
+        end: 20.0
+        who: 女人
+        objective: 想求一个答案，但不敢真的问出来
+        emotion_curve: 硬撑 → 破防边缘
+        trigger_line: "supposed to do"
+        line: "I don't know what I'm supposed to do with it now."
+        face_natural: 眉毛内侧高高抬起，眉心挤压出深纹；嘴角大幅下拉；说到 "supposed" 时张开嘴吸气，却没有立刻发出完整音节
+        face_au: [AU1:4, AU15:3, AU26:3, AU5:2]
+        gaze_body: 视线完全离开对方，落到地面；肩膀第一次塌下来，上身向后收了半步
+        voice: 声音彻底沙哑，"I don't know" 几乎听不清，句尾破成气声；呼吸开始不规律，吸两次才够一口
+        pause: 在 "with it" 和 "now" 之间停了 0.5 秒，喉咙吞咽一次
+        end_state: 眼睛仍睁着，第一滴眼泪刚好滑到颧骨，不擦
+        forbidden: [不要一帧内完成变化, 不要嚎啕大哭, 不要蹲下, 不要转身离开]
+
+      # 节拍 5：近乎羞耻的坦白
+      - start: 20.0
+        end: 23.0
+        who: 女人
+        objective: 说出真正想要的东西，同时为说出它感到羞耻
+        emotion_curve: 崩塌 → 平静下来的羞耻
+        trigger_line: "someone to see it."
+        line: "I just wanted someone to see it."
+        face_natural: 视线先落到地面，再慢慢抬回对方眼睛；嘴角向下，下唇外翻；说完后嘴唇闭合，下巴收进去一点
+        face_au: [AU64:3, AU54:2, AU15:2, AU16:2]
+        gaze_body: 双手插回口袋，肩膀内收，整个人小了一圈
+        voice: 音量降到几乎听不清，语速最慢，每个词之间都有缝；句尾没有上扬也没有下降，是平的
+        pause: 说完后不急着补话，留 0.6 秒静止，只有一次鼻息
+        end_state: 目光停在对方眼睛上，眼泪已经干了，脸上没有表情
+        forbidden: [不要哭出声, 不要笑, 不要解释, 不要重复这句话]
+
+  # ---------------------------------------------------------------- 镜头 3
+  - id: S3
+    start: 23.0
+    end: 27.0
+    framing: 男人近景，正面偏侧，背景是虚焦的石墙
+    camera_move: 固定
+    focus: 男人
+    note: 反应镜头。他几乎不动，全部表演在眼睛和呼吸上
+    beats:
+      - start: 23.0
+        end: 27.0
+        who: 男人
+        objective: 不反驳，也不安慰，只是接住这句话
+        emotion_curve: 回避 → 被迫面对 → 无力
+        trigger_line: "see it"
+        face_natural: 视线原本落在对方肩膀以下，听到"see it"后缓慢抬到对方眼睛；眉毛内侧轻微抬起又放下；嘴唇压紧后松开，没有发声
+        face_au: [AU54:2, AU1:2, AU24:2, AU45:1]
+        gaze_body: 双手一直插在口袋里没有拿出来；喉咙吞咽一次；身体重心从右脚换到左脚
+        voice: 没有台词，只有一次深呼吸，吸气时肩膀抬起一点
+        pause: 抬眼看对方之前停了 0.9 秒
+        end_state: 嘴唇张开一条缝，又闭上，视线没有再移开
+        forbidden: [不要摇头, 不要走近, 不要伸手, 不要说话, 不要皱眉]
+
+  # ---------------------------------------------------------------- 镜头 4
+  - id: S4
+    start: 27.0
+    end: 30.0
+    framing: 中景双人，构图与 S1 完全一致
+    camera_move: 固定，回到开场机位
+    focus: 两人之间的空隙
+    note: 不解决问题，只把两人重新放回开场的距离，让沉默落地
+    beats:
+      - start: 27.0
+        end: 30.0
+        who: 两人
+        objective: 谁都不再说话
+        emotion_curve: 对峙 → 各自的沉默
+        face_natural: 两人都不看对方，女人的视线落在男人胸口的拉链上，男人的视线落在女人身后的雪地
+        face_au: [AU54:1, AU15:1]
+        gaze_body: 两人之间保持原来的一米距离，谁也没有移动；风把女人额前的头发吹动一下
+        voice: 只有风声和远处清雪车的低频，没有任何人声
+        pause: 最后 1.2 秒完全静止，只有呼吸
+        end_state: 画面停在两人都不动的瞬间，不淡出不加音乐
+        forbidden: [不要拥抱, 不要转身走开, 不要音乐推上来, 不要字幕]

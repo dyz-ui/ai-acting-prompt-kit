@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiacting"
+version = "0.1.0"
+description = "把情绪编译成可执行的表演：AI 表演提示词编译器（八维公式）"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "dyz-ui" }]
+keywords = ["ai-video", "prompt-engineering", "seedance", "facs", "au", "acting"]
+dependencies = ["PyYAML>=6.0"]
+
+[project.optional-dependencies]
+tts = ["edge-tts>=7.0"]
+ingest = ["yt-dlp>=2024.1"]
+asr = ["faster-whisper>=1.0"]
+all = ["edge-tts>=7.0", "yt-dlp>=2024.1"]
+
+[project.scripts]
+aiacting = "aiacting.cli:main"
+
+[tool.setuptools]
+packages = ["aiacting"]
+
+[tool.setuptools.package-data]
+aiacting = ["../data/au.json"]

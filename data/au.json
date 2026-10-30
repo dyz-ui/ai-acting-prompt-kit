@@ -1,0 +1,70 @@
+{
+  "meta": {
+    "source": "FACS (Facial Action Coding System, Ekman & Friesen) 常用动作单元子集",
+    "note": "AU 不是情绪公式。同一 AU 组合在不同语境下可以是不同情绪，必须配合目的、目光、身体和台词触发词使用。",
+    "intensity": {
+      "1": "A 极轻，刚可察觉",
+      "2": "B 轻，明显但克制",
+      "3": "C 中等，观众能读到",
+      "4": "D 强，情绪外溢边缘",
+      "5": "E 极强，接近面部动作极限"
+    }
+  },
+  "au": [
+    {"code": "AU1", "cn": "眉毛内侧抬起", "en": "Inner Brow Raiser", "region": "眉", "feel": "痛苦、担忧、恳求", "prompt": "眉毛内侧（眉心）缓慢向上抬起，眉形从平直变成八字"},
+    {"code": "AU2", "cn": "眉毛外侧抬起", "en": "Outer Brow Raiser", "region": "眉", "feel": "惊讶、疑问、注意", "prompt": "眉毛外侧抬高，额头出现横向浅纹"},
+    {"code": "AU4", "cn": "眉毛下压", "en": "Brow Lowerer", "region": "眉", "feel": "愤怒、专注、压迫", "prompt": "双眉向下压，眉心收拢，眉间出现竖向纹路"},
+    {"code": "AU5", "cn": "上眼睑抬起", "en": "Upper Lid Raiser", "region": "眼", "feel": "警觉、惊恐、瞪视", "prompt": "上眼睑抬高，露出比平时更多的眼白"},
+    {"code": "AU6", "cn": "面颊抬起", "en": "Cheek Raiser", "region": "眼", "feel": "真笑、眼部参与", "prompt": "眼下肌肉收紧，下眼睑下方鼓起，眼尾出现皱纹"},
+    {"code": "AU7", "cn": "眼睑收紧", "en": "Lid Tightener", "region": "眼", "feel": "隐忍、压抑、敌意", "prompt": "上下眼睑收紧，眼睛变窄，视线变硬"},
+    {"code": "AU9", "cn": "鼻梁皱起", "en": "Nose Wrinkler", "region": "鼻", "feel": "厌恶、轻蔑", "prompt": "鼻梁处向上皱起，鼻翼两侧出现短纹"},
+    {"code": "AU10", "cn": "上唇抬起", "en": "Upper Lip Raiser", "region": "口", "feel": "厌恶、不屑", "prompt": "上唇中部向上提起，露出上排牙齿边缘"},
+    {"code": "AU12", "cn": "嘴角上扬", "en": "Lip Corner Puller", "region": "口", "feel": "微笑、礼貌、勉强", "prompt": "嘴角向斜上方牵动，幅度克制"},
+    {"code": "AU14", "cn": "嘴角收紧", "en": "Dimpler", "region": "口", "feel": "克制、不认同", "prompt": "嘴角向内收紧，唇线变短，出现轻微酒窝"},
+    {"code": "AU15", "cn": "嘴角向下", "en": "Lip Corner Depressor", "region": "口", "feel": "悲伤、失望、无力", "prompt": "嘴角向下拉，下唇中部微微外翻"},
+    {"code": "AU16", "cn": "下唇下压", "en": "Lower Lip Depressor", "region": "口", "feel": "委屈、将哭未哭", "prompt": "下唇向下压并轻微外翻，下巴皮肤绷紧"},
+    {"code": "AU17", "cn": "下巴抬起并绷紧", "en": "Chin Raiser", "region": "下颌", "feel": "忍耐、把话咽回去", "prompt": "下巴向上抬起并绷紧，下唇被推起，喉部有吞咽动作"},
+    {"code": "AU20", "cn": "嘴唇横向拉伸", "en": "Lip Stretcher", "region": "口", "feel": "恐惧、紧张", "prompt": "嘴唇向两侧横向拉开，唇形变薄变宽"},
+    {"code": "AU23", "cn": "嘴唇收紧", "en": "Lip Tightener", "region": "口", "feel": "压抑怒火、克制", "prompt": "双唇向内收紧，唇色变浅，唇线绷直"},
+    {"code": "AU24", "cn": "嘴唇压紧", "en": "Lip Presser", "region": "口", "feel": "强忍、拒绝回应", "prompt": "上下唇相互压紧，嘴角轻微内收"},
+    {"code": "AU25", "cn": "嘴唇分开", "en": "Lips Part", "region": "口", "feel": "准备说话、呼吸加快", "prompt": "双唇分开，露出齿间缝隙，但没有张大"},
+    {"code": "AU26", "cn": "下颚张开", "en": "Jaw Drop", "region": "下颌", "feel": "发声、爆发、失神", "prompt": "下颚向下张开，口部形成纵向开口"},
+    {"code": "AU27", "cn": "嘴巴张大", "en": "Mouth Stretch", "region": "口", "feel": "嘶吼、痛哭、惊叫", "prompt": "嘴巴大幅张开，下颚下沉，口型接近纵向椭圆"},
+    {"code": "AU43", "cn": "闭眼", "en": "Eyes Closed", "region": "眼", "feel": "逃避、忍受、放弃", "prompt": "双眼闭合，眼睑完全盖住瞳孔"},
+    {"code": "AU45", "cn": "眨眼", "en": "Blink", "region": "眼", "feel": "节奏、闪避、掩饰", "prompt": "一次快速眨眼，闭合到张开约 0.15 秒"},
+    {"code": "AU51", "cn": "头转向左", "en": "Head Turn Left", "region": "头", "feel": "回避、抽离", "prompt": "头部向左转动约 20 度"},
+    {"code": "AU52", "cn": "头转向右", "en": "Head Turn Right", "region": "头", "feel": "回避、看向对方", "prompt": "头部向右转动约 20 度"},
+    {"code": "AU54", "cn": "头向下压", "en": "Head Down", "region": "头", "feel": "认输、羞愧、疲惫", "prompt": "头部向下低垂，下巴靠近锁骨"},
+    {"code": "AU55", "cn": "头向上抬", "en": "Head Up", "region": "头", "feel": "倔强、挑衅、硬撑", "prompt": "头部向上抬起，下巴抬高"},
+    {"code": "AU61", "cn": "眼球向左", "en": "Eyes Turn Left", "region": "眼", "feel": "回忆、寻找、逃避", "prompt": "眼球向左移动，眼睑跟随，头部不转"},
+    {"code": "AU62", "cn": "眼球向右", "en": "Eyes Turn Right", "region": "眼", "feel": "回忆、寻找、逃避", "prompt": "眼球向右移动，眼睑跟随，头部不转"},
+    {"code": "AU64", "cn": "眼球向下", "en": "Eyes Down", "region": "眼", "feel": "羞愧、告解、放弃对视", "prompt": "眼球向下移动，上眼睑随之下垂"}
+  ],
+  "presets": {
+    "悲伤-将哭未哭": {
+      "au": ["AU1:3", "AU15:2", "AU17:2", "AU7:2"],
+      "natural": "眉毛内侧缓慢抬起，嘴角轻微下沉，下巴开始绷紧；张开嘴想继续说话，却没有立刻发出声音；眼眶逐渐湿润，但眼泪暂时不能落下",
+      "forbidden": ["不要在第一帧就流泪", "不要皱眉成愤怒", "不要低头躲避镜头"]
+    },
+    "愤怒-压住再爆": {
+      "au": ["AU4:3", "AU7:3", "AU23:3", "AU25:3", "AU26:2"],
+      "natural": "说话前先压紧嘴唇、咬住下颚；眉毛向内下压；前半句保持低沉；说到刺激词时鼻翼张开，身体前倾；音量短促抬高；最后一个词结束后立刻闭嘴",
+      "forbidden": ["不要一开始就咆哮", "不要瞪大眼睛", "不要挥手"]
+    },
+    "压抑-把话咽回去": {
+      "au": ["AU17:3", "AU24:2", "AU54:2", "AU7:2"],
+      "natural": "下巴抬起并绷紧，双唇压紧，头部向下微低；喉部吞咽一次；呼吸从鼻子进出，肩膀不动",
+      "forbidden": ["不要摇头", "不要后退", "不要闭眼太久"]
+    },
+    "羞耻-坦白": {
+      "au": ["AU64:3", "AU54:2", "AU15:2", "AU16:2"],
+      "natural": "视线先落到地面，再抬回对方眼睛；嘴角向下，下唇轻微外翻；说话音量降到几乎听不清",
+      "forbidden": ["不要哭出声", "不要笑", "不要转身离开"]
+    },
+    "崩塌-情绪破防": {
+      "au": ["AU1:4", "AU4:2", "AU15:4", "AU26:3", "AU43:2"],
+      "natural": "眉毛内侧高高抬起，眉心同时挤压；嘴角大幅下拉；张嘴吸气但发不出完整音节；眼睛短暂闭合又强行睁开",
+      "forbidden": ["不要一帧内完成", "不要同时保持愤怒瞪视", "不要用手遮脸"]
+    }
+  }
+}
