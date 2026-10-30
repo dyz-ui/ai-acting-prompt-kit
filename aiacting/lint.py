@@ -32,12 +32,19 @@ def _has_action(text: str) -> bool:
     return any(v in text for v in ACTION_VERBS)
 
 
+def _is_curve(seg: str) -> bool:
+    """「情绪：A → B」是曲线描述，允许出现情绪词——这正是第三维该写的东西。"""
+    return "→" in seg or "->" in seg or "=>" in seg
+
+
 def lint_text(text: str) -> List[Issue]:
     """扫描任意自由文本（粘贴进来的旧提示词也能用）。"""
     issues: List[Issue] = []
     for seg in re.split(r"[。；;\n]", text):
         seg = seg.strip()
         if not seg:
+            continue
+        if _is_curve(seg) or seg.startswith(("情绪：", "目的：", "禁止：", "触发词：")):
             continue
         hits = [w for w in EMOTION_WORDS if w in seg]
         if hits and not _has_action(seg):

@@ -99,7 +99,7 @@ SCAFFOLD = """project:
   duration: 30
   genre: 家庭剧情
   style: 写实电影质感
-  aspect: 16:9
+  aspect: "16:9"      # 引号不能去掉：YAML 会把 16:9 当成六十进制数算成 969
   resolution: 1080p
   camera: 35mm 胶片颗粒，24fps 观感，浅景深，轻微手持呼吸感
   era: 20 世纪中期美国普通工人家庭
