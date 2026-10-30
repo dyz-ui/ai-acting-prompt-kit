@@ -120,7 +120,7 @@ $ aiacting lint -t "女人非常悲伤地哭泣，眼泪止不住流下来。"
 aiacting/          编译器（schema / compiler / lint / au / post / ingest / tts / cli）
 data/au.json       28 个常用 FACS 动作单元 + 5 组情绪预设
 examples/          30 秒双人对手戏完整范本
-docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实
+docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态调研
 scripts/           环境安装、远程 GPU 骨架
 ```
 
@@ -138,6 +138,17 @@ scripts/           环境安装、远程 GPU 骨架
 | 配音 | 本机（edge-tts） | 免费、够用 |
 
 详细测算见 [`docs/03-本机方案与硬件现实.md`](docs/03-本机方案与硬件现实.md)。想跑开源模型（Wan-Animate-2 / InfiniteTalk / HunyuanVideo-Avatar）需要 24 GB 显存，用 `scripts/remote_gpu_setup.sh` 去租卡，不在本机硬撑。
+
+开源生态里各层有什么、缺什么，见 [`docs/04-开源生态调研.md`](docs/04-开源生态调研.md)。一句话结论：**生成层的轮子很全，控制层几乎是空的**——这也是为什么那套写法值钱。
+
+---
+
+## Roadmap
+
+- [x] v0.1 三层结构 + 八维公式编译、体检、后期、拆片、配音
+- [ ] v0.2 `aiacting analyze <video>`：用 [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace) 提取 AU 时间序列，自动生成 beat 骨架
+- [ ] v0.3 角色一致性检查：多镜头间人脸比对，发现漂移就报警
+- [ ] v0.4 多语言台词对齐（中英日），自动换算口型时长
 
 ---
 
