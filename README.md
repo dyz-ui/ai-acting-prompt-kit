@@ -44,6 +44,29 @@ cat examples/what-about-my-life.yml
 
 ---
 
+## 本地安装（不走 GitHub，不联网也能用）
+
+克隆不下来、或者访问 GitHub 有问题时，直接用本机这份源码装一遍：
+
+```powershell
+# 在项目根目录
+powershell -ExecutionPolicy Bypass -File scripts\install_local.ps1
+```
+
+脚本会做四件事：建 `.venv` → `pip install -e .` → 在 `%USERPROFILE%\bin` 放入口 →
+确保该目录在用户 PATH。完成后**新开一个终端**，任何目录都能直接敲：
+
+```
+aiacting check examples\what-about-my-life.yml
+aiacting build examples\what-about-my-life.yml -o prompt.txt
+```
+
+> 控制台如果出现乱码，先执行 `chcp 65001`。程序统一输出 UTF-8，不混用 GBK。
+>
+> 卸载：删掉 `%USERPROFILE%\bin\aiacting.cmd` 和项目里的 `.venv` 即可，不写注册表、不进系统目录。
+
+---
+
 ## 八维公式
 
 ```
@@ -120,7 +143,7 @@ $ aiacting lint -t "女人非常悲伤地哭泣，眼泪止不住流下来。"
 aiacting/          编译器（schema / compiler / lint / au / post / ingest / tts / cli）
 data/au.json       28 个常用 FACS 动作单元 + 5 组情绪预设
 examples/          30 秒双人对手戏完整范本
-docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态调研
+docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态 ｜ 05 本地安装
 scripts/           环境安装、远程 GPU 骨架
 ```
 

@@ -10,9 +10,25 @@ from .au import AULibrary
 
 
 def _fix_console() -> None:
+    """统一按 UTF-8 输出，并把 Windows 控制台代码页切到 65001。
+
+    只选定一种编码（UTF-8）是刻意的：混用 GBK 会在管道、重定向、CI、
+    Git Bash 之间来回出错。如果看到乱码，先执行 `chcp 65001`，
+    或在宿主里设 `[Console]::OutputEncoding = [Text.Encoding]::UTF8`。
+    """
+    import os as _os
+
+    if _os.name == "nt":
+        try:
+            import ctypes
+
+            ctypes.windll.kernel32.SetConsoleOutputCP(65001)
+            ctypes.windll.kernel32.SetConsoleCP(65001)
+        except Exception:  # noqa: BLE001
+            pass
     for stream in (sys.stdout, sys.stderr):
         try:
-            stream.reconfigure(encoding="utf-8")  # type: ignore[attr-defined]
+            stream.reconfigure(encoding="utf-8", errors="replace")  # type: ignore[attr-defined]
         except Exception:  # noqa: BLE001
             pass
 
