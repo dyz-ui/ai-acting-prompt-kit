@@ -24,17 +24,22 @@
 
 ## 三十秒上手
 
+**第一次用，先看 [`docs/06-五分钟上手.md`](docs/06-五分钟上手.md)** —— 从零到拿到一条能粘贴的提示词，全程不用写代码。
+
 ```bash
-# 1. 建一个项目骨架（里面已经有一场可直接跑 3.7 秒的样板）
+# 1. 跑一个 10 秒单镜头的样板，看清提示词长什么样
+aiacting build examples/quickstart-10s.yml -o prompt.txt
+
+# 2. 建一个自己的项目骨架（里面已经有一场可直接跑 3.7 秒的样板）
 ./aiacting.sh new 我的戏
 
-# 2. 看看示例：一场 30 秒的双人对手戏，四镜头、五个情绪节拍
+# 3. 看完整的 30 秒四镜头范本
 cat examples/what-about-my-life.yml
 
-# 3. 体检
+# 4. 体检
 ./aiacting.sh check examples/what-about-my-life.yml
 
-# 4. 编译成提示词
+# 5. 编译成提示词
 ./aiacting.sh build examples/what-about-my-life.yml -o prompt.txt
 ```
 
@@ -142,8 +147,8 @@ $ aiacting lint -t "女人非常悲伤地哭泣，眼泪止不住流下来。"
 ```
 aiacting/          编译器（schema / compiler / lint / au / post / ingest / tts / cli）
 data/au.json       28 个常用 FACS 动作单元 + 5 组情绪预设
-examples/          30 秒双人对手戏完整范本
-docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态 ｜ 05 本地安装
+examples/          quickstart-10s（入门）+ what-about-my-life（30 秒完整范本）
+docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态 ｜ 05 本地安装 ｜ 06 五分钟上手
 scripts/           环境安装、远程 GPU 骨架
 ```
 
