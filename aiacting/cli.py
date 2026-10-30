@@ -194,6 +194,18 @@ def cmd_tts(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_animatic(args: argparse.Namespace) -> int:
+    proj = schema.load(args.project)
+    from . import animatic
+
+    if args.plan:
+        print(animatic.plan_text(proj))
+        return 0
+    out = animatic.render(proj, Path(args.out), args.width, args.height, args.fps)
+    print(f"已渲染 {out}（{args.width}x{args.height} @{args.fps}fps）")
+    return 0
+
+
 def cmd_post(args: argparse.Namespace) -> int:
     if args.action == "concat":
         p = post.concat([Path(x) for x in args.files], Path(args.out))
@@ -252,6 +264,15 @@ def build_parser() -> argparse.ArgumentParser:
     p.add_argument("--every", type=float, default=8.0)
     p.add_argument("--asr", action="store_true", help="顺带转写（需 faster-whisper）")
     p.set_defaults(func=cmd_ingest)
+
+    p = sub.add_parser("animatic", help="用代码渲染节拍预览片（不花积分）")
+    p.add_argument("project")
+    p.add_argument("-o", "--out", default="animatic.mp4")
+    p.add_argument("--width", type=int, default=1280)
+    p.add_argument("--height", type=int, default=720)
+    p.add_argument("--fps", type=int, default=30)
+    p.add_argument("--plan", action="store_true", help="只打印文本节拍表，不渲染")
+    p.set_defaults(func=cmd_animatic)
 
     p = sub.add_parser("tts", help="免费配音")
     p.add_argument("text")
