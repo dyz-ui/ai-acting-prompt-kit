@@ -153,7 +153,7 @@ AI表演提示词调试台.md  单文件调试台（粘给任意 AI，不依赖�
 aiacting/          编译器（schema / compiler / lint / au / post / ingest / tts / cli）
 data/au.json       28 个常用 FACS 动作单元 + 5 组情绪预设
 examples/          quickstart-10s（入门）+ what-about-my-life（30 秒完整范本）
-docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态 ｜ 05 本地安装 ｜ 06 五分钟上手
+docs/              00 视频拆解 ｜ 01 八维手册 ｜ 02 命令手册 ｜ 03 硬件现实 ｜ 04 开源生态 ｜ 05 本地安装 ｜ 06 五分钟上手 ｜ 07 平台与额度
 scripts/           环境安装、远程 GPU 骨架
 ```
 
