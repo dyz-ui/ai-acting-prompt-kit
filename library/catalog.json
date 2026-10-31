@@ -1,0 +1,502 @@
+{
+  "updated": "2026-10-31",
+  "note": "access: local=本地已有全文；buy=需购买；library=图书馆/借阅；blocked=本机网络不可达",
+  "books": [
+    {
+      "id": "bccampus-gd",
+      "title": "Graphic Design and Print Production Fundamentals",
+      "author": "Graphic Communications Open Textbook Collective",
+      "year": 2015,
+      "lang": "en",
+      "license": "CC BY 4.0",
+      "access": "local",
+      "file": "books/graphic-design-fundamentals.pdf",
+      "pages": 226,
+      "why": "唯一一本拿到全文的：第三章讲视觉元素与构图原则，正好是我们引擎需要的那部分",
+      "sections": {
+        "3.2 视觉元素（点线面/色彩/肌理/空间）": 55,
+        "3.3 构图原则（平衡·对比·层级·节奏）": 71,
+        "3.4 组织原则（网格·分组·对齐）": 85,
+        "形状 Shape": 56,
+        "色彩 Colour": 58,
+        "留白与平衡 Negative space / Balance": 60,
+        "节奏 Rhythm": 67
+      }
+    },
+    {
+      "id": "kandinsky",
+      "title": "点线面（Point and Line to Plane）",
+      "author": "Wassily Kandinsky",
+      "year": 1926,
+      "lang": "zh/en",
+      "license": "public domain（1926 年初版）",
+      "access": "blocked",
+      "why": "把点当静止、线当运动、面当承载，最早用『力』描述画面",
+      "sections": {
+        "点": null,
+        "线": null,
+        "基本平面": null
+      },
+      "route": "archive.org 本机不可达；可试英文版重印本（Dover）或中文译本"
+    },
+    {
+      "id": "arnheim",
+      "title": "艺术与视知觉",
+      "author": "鲁道夫·阿恩海姆",
+      "year": 1954,
+      "lang": "zh",
+      "license": "版权书",
+      "access": "buy",
+      "why": "视觉是主动组织，不是被动接收——解释了『为什么这样看舒服』",
+      "sections": {
+        "平衡": null,
+        "形状": null,
+        "形式": null,
+        "运动": null
+      }
+    },
+    {
+      "id": "gombrich",
+      "title": "秩序感",
+      "author": "E.H. 贡布里希",
+      "year": 1979,
+      "lang": "zh",
+      "license": "版权书",
+      "access": "buy",
+      "why": "为什么适度不规则比完美对称更耐看——做网点/纹理/颗粒的理论依据",
+      "sections": {
+        "装饰与知觉": null
+      }
+    },
+    {
+      "id": "albers",
+      "title": "色彩构成（Interaction of Color）",
+      "author": "Josef Albers",
+      "year": 1963,
+      "lang": "zh/en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "颜色没有绝对值，只有关系——调色板的底层逻辑",
+      "sections": {
+        "色彩相对性": null
+      }
+    },
+    {
+      "id": "williams",
+      "title": "写给大家看的设计书",
+      "author": "Robin Williams",
+      "year": 1994,
+      "lang": "zh",
+      "license": "版权书",
+      "access": "buy",
+      "why": "CRAP 四原则，两小时读完，性价比最高的一本",
+      "sections": {
+        "对比": null,
+        "重复": null,
+        "对齐": null,
+        "亲近": null
+      }
+    },
+    {
+      "id": "msb",
+      "title": "Grid Systems in Graphic Design",
+      "author": "Josef Müller-Brockmann",
+      "year": 1981,
+      "lang": "en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "网格系统圣经：所有元素必须落在网格上",
+      "sections": {
+        "栏与基线": null,
+        "网格构造": null
+      }
+    },
+    {
+      "id": "samara",
+      "title": "Design Elements: A Graphic Style Manual",
+      "author": "Timothy Samara",
+      "year": 2007,
+      "lang": "en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "20 多种可执行构图手法，每条配图例，当手册翻",
+      "sections": {
+        "裁切": null,
+        "叠压": null,
+        "层级": null,
+        "动势": null
+      }
+    },
+    {
+      "id": "picture-this",
+      "title": "Picture This: How Pictures Work",
+      "author": "Molly Bang",
+      "year": 1991,
+      "lang": "en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "用最简几何形状讲清『位置一改，情绪就变』——和我们代码画片的路子完全一致",
+      "sections": {
+        "位置与情绪": null,
+        "大小与威胁": null
+      }
+    },
+    {
+      "id": "visual-story",
+      "title": "The Visual Story",
+      "author": "Bruce Block",
+      "year": 2007,
+      "lang": "en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "七个成分（空间/线条/形状/明度/色彩/运动/节奏）+ 对比与亲和——多镜头不散的唯一解",
+      "sections": {
+        "对比与亲和": null,
+        "空间": null,
+        "线条与形状": null,
+        "明度": null,
+        "色彩": null,
+        "运动": null,
+        "节奏": null
+      }
+    },
+    {
+      "id": "framed-ink",
+      "title": "Framed Ink",
+      "author": "Marcos Mateu-Mestre",
+      "year": 2010,
+      "lang": "en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "大形状与剪影可读性；眯眼测试的出处",
+      "sections": {
+        "大形状": null,
+        "视线流动": null
+      }
+    },
+    {
+      "id": "shot-by-shot",
+      "title": "Film Directing: Shot by Shot",
+      "author": "Steven Katz",
+      "year": 1991,
+      "lang": "zh/en",
+      "license": "版权书",
+      "access": "buy",
+      "why": "景别与机位语法，做分镜时的工具箱",
+      "sections": {
+        "景别": null,
+        "轴线": null
+      }
+    },
+    {
+      "id": "chaocang",
+      "title": "艺术·设计的平面构成",
+      "author": "朝仓直巳",
+      "year": 1987,
+      "lang": "zh",
+      "license": "版权书",
+      "access": "library",
+      "why": "一个形怎么变成几十个形：重复/渐变/发射/特异/密集",
+      "sections": {
+        "重复构成": null,
+        "渐变构成": null,
+        "发射构成": null,
+        "特异构成": null
+      }
+    },
+    {
+      "id": "xinhuaquan",
+      "title": "形态构成学",
+      "author": "辛华泉",
+      "year": 1999,
+      "lang": "zh",
+      "license": "版权书",
+      "access": "library",
+      "why": "国内院校通用底本，当字典查",
+      "sections": {
+        "形态要素": null,
+        "构成法则": null
+      }
+    },
+    {
+      "id": "wangshouzhi",
+      "title": "世界平面设计史",
+      "author": "王受之",
+      "year": 2002,
+      "lang": "zh",
+      "license": "版权书",
+      "access": "library",
+      "why": "知道每种风格从哪来，才不会用错",
+      "sections": {
+        "工艺美术运动": null,
+        "新艺术": null,
+        "包豪斯": null,
+        "国际主义": null,
+        "后现代": null
+      }
+    }
+  ],
+  "concepts": [
+    {
+      "id": "anchor",
+      "cn": "主体位置",
+      "en": "anchor / focal point",
+      "rule": "主体放在三分点 0.333/0.667 或黄金点 0.382/0.618，忌正中",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 71
+        },
+        {
+          "book": "picture-this",
+          "chapter": "位置与情绪"
+        }
+      ],
+      "code": "composition.anchor = thirds_left | golden_right | center | edge_left"
+    },
+    {
+      "id": "thirds",
+      "cn": "三分法",
+      "en": "rule of thirds",
+      "rule": "横竖各分三份，主体落在交点或分割线上",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 71
+        },
+        {
+          "book": "samara",
+          "chapter": "层级"
+        }
+      ],
+      "code": "anchor: thirds_left/right; horizon: 0.34/0.66"
+    },
+    {
+      "id": "golden",
+      "cn": "黄金分割",
+      "en": "golden section",
+      "rule": "0.382 / 0.618，比三分更耐看",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 71
+        },
+        {
+          "book": "arnheim",
+          "chapter": "平衡"
+        }
+      ],
+      "code": "anchor: golden_left/right"
+    },
+    {
+      "id": "negative-space",
+      "cn": "留白 / 负空间",
+      "en": "negative space",
+      "rule": "留白占 40–60%，且必须干净有质感；主体朝向侧留白 ≥ 反侧 1.5 倍",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 60
+        },
+        {
+          "book": "picture-this",
+          "chapter": "位置与情绪"
+        }
+      ],
+      "code": "composition.negative_space = left | right",
+      "quote": "if the work is balanced and the negative space is active, it brings energy to the form and its space. The focal point or figure increases its visual power because there is contrast for the eye. — p.60"
+    },
+    {
+      "id": "visual-weight",
+      "cn": "视觉重量",
+      "en": "visual weight",
+      "rule": "人脸>文字>动物>建筑>自然；亮>暗，饱和>灰，清晰>模糊",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 71
+        },
+        {
+          "book": "arnheim",
+          "chapter": "平衡"
+        }
+      ],
+      "code": "字幕永远不压主体；主体明度高于背景"
+    },
+    {
+      "id": "contrast",
+      "cn": "对比",
+      "en": "contrast",
+      "rule": "相邻镜头在七维里至少 3 维同向变化，否则会散",
+      "sources": [
+        {
+          "book": "visual-story",
+          "chapter": "对比与亲和"
+        },
+        {
+          "book": "bccampus-gd",
+          "page": 60
+        }
+      ],
+      "code": "节拍切换时检查：色相/明度/运动方向至少 3 项同向"
+    },
+    {
+      "id": "hierarchy",
+      "cn": "层级",
+      "en": "hierarchy",
+      "rule": "一屏只能有一个第一眼主体，字号/明度/位置三重区分",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 54
+        },
+        {
+          "book": "williams",
+          "chapter": "对比"
+        }
+      ],
+      "code": "字幕字号 < 主体面积；标题与字幕不同权重"
+    },
+    {
+      "id": "rhythm",
+      "cn": "节奏",
+      "en": "rhythm",
+      "rule": "重复产生秩序，变化产生注意；节奏靠『间隔』而非元素本身",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 67
+        },
+        {
+          "book": "visual-story",
+          "chapter": "节奏"
+        }
+      ],
+      "code": "每拍时长不等（5.5/7.4/7.1/6.2），忌均分"
+    },
+    {
+      "id": "depth",
+      "cn": "三层景深",
+      "en": "three planes",
+      "rule": "前景虚、中景实、背景灰；缺一层画面就扁",
+      "sources": [
+        {
+          "book": "bccampus-gd",
+          "page": 58
+        },
+        {
+          "book": "framed-ink",
+          "chapter": "大形状"
+        }
+      ],
+      "code": "layers 顺序即景深：远山→近山→路面→电杆"
+    },
+    {
+      "id": "leading-line",
+      "cn": "引导线",
+      "en": "leading line",
+      "rule": "从画面边缘入画，终点必须落在主体，不能通向『无底洞』",
+      "sources": [
+        {
+          "book": "framed-ink",
+          "chapter": "视线流动"
+        },
+        {
+          "book": "visual-story",
+          "chapter": "线条与形状"
+        }
+      ],
+      "code": "公路/江河/光路的收束点 = 主体位置"
+    },
+    {
+      "id": "shape-language",
+      "cn": "形状语言",
+      "en": "shape language",
+      "rule": "三角稳定、圆圆满、方庄重、不规则自然；斜线产生动感",
+      "sources": [
+        {
+          "book": "kandinsky",
+          "chapter": "点"
+        },
+        {
+          "book": "picture-this",
+          "chapter": "大小与威胁"
+        }
+      ],
+      "code": "style.geometry = sharp | round | organic"
+    },
+    {
+      "id": "color-relation",
+      "cn": "色彩关系",
+      "en": "color interaction",
+      "rule": "颜色没有绝对值：同一灰在红底偏绿，在蓝底偏暖",
+      "sources": [
+        {
+          "book": "albers",
+          "chapter": "色彩相对性"
+        }
+      ],
+      "code": "情绪 A→B 用 tint 混合（20% 权重），不做绝对赋值"
+    },
+    {
+      "id": "grid",
+      "cn": "网格",
+      "en": "grid system",
+      "rule": "所有元素落在栏与基线上；不规则是设计，不是随手",
+      "sources": [
+        {
+          "book": "msb",
+          "chapter": "网格构造"
+        },
+        {
+          "book": "bccampus-gd",
+          "page": 85
+        }
+      ],
+      "code": "字幕 y = H-148，标题基线固定，不手调"
+    },
+    {
+      "id": "texture",
+      "cn": "肌理",
+      "en": "texture",
+      "rule": "适度不规则比完美对称耐看；颗粒要克制，否则压缩爆炸",
+      "sources": [
+        {
+          "book": "gombrich",
+          "chapter": "装饰与知觉"
+        },
+        {
+          "book": "bccampus-gd",
+          "page": 46
+        }
+      ],
+      "code": "grain σ=3.0；crf 20 以下颗粒会让体积翻三倍"
+    },
+    {
+      "id": "squint",
+      "cn": "眯眼测试",
+      "en": "squint test",
+      "rule": "缩到 320px 还认得出主体，构图才算成立",
+      "sources": [
+        {
+          "book": "framed-ink",
+          "chapter": "大形状"
+        }
+      ],
+      "code": "渲完抽帧 → scale=320:-1 → 人眼过一遍"
+    },
+    {
+      "id": "affinity",
+      "cn": "亲和",
+      "en": "affinity",
+      "rule": "与对比相对：连续两三拍保持同一维不变，观众才不会累",
+      "sources": [
+        {
+          "book": "visual-story",
+          "chapter": "对比与亲和"
+        }
+      ],
+      "code": "同一族场景连续使用时，保持色调不变、只换构图"
+    }
+  ]
+}

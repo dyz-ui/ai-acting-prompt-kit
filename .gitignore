@@ -30,3 +30,5 @@ desktop.ini
 
 # ---- 密钥 ----
 .env
+# 书库全文不入库（体积大，可用 library/fetch.sh 重取）
+library/books/*.pdf
