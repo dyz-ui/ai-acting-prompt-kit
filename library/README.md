@@ -64,3 +64,22 @@ library/
 
 `books/` 里的文件按原许可分发：
 - Graphic Design and Print Production Fundamentals — CC BY 4.0，需保留署名，见 `books/ATTRIBUTION.md`
+
+## 脑图
+
+```bat
+python scripts\make_mindmap.py
+```
+
+产出三样：
+
+| 文件 | 用途 |
+| --- | --- |
+| `视觉方法书库.xmind` | 双击用 **XMind** 打开，含书↔概念↔代码的 29 条关联线 |
+| `mindmap.png` | 两栏连线预览，不装软件也能看 |
+| `mindmap.md` | 大纲，可导入幕布 / Notion / Obsidian |
+
+XMind 里三个分支：**一、书**（按获取状态分组）→ **二、概念**（备注里是规则+代码+原文）→ **三、代码字段**。
+关联线表示"这本书支撑了这条概念"，点任意概念能看到完整备注。
+
+> 老版本 XMind 8 只认 `content.xml` 格式。打不开的话用 `mindmap.md` 导入，或改脚本生成 XMind 8 格式。

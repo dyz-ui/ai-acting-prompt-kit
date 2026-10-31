@@ -1,0 +1,112 @@
+# 视觉方法书库
+
+## 书
+- **Graphic Design and Print Production Fundamentals**（Graphic Communications Open Textbook Collective，2015）— 本地
+  - 唯一一本拿到全文的：第三章讲视觉元素与构图原则，正好是我们引擎需要的那部分
+- **点线面（Point and Line to Plane）**（Wassily Kandinsky，1926）— 不可达
+  - 把点当静止、线当运动、面当承载，最早用『力』描述画面
+- **艺术与视知觉**（鲁道夫·阿恩海姆，1954）— 购买
+  - 视觉是主动组织，不是被动接收——解释了『为什么这样看舒服』
+- **秩序感**（E.H. 贡布里希，1979）— 购买
+  - 为什么适度不规则比完美对称更耐看——做网点/纹理/颗粒的理论依据
+- **色彩构成（Interaction of Color）**（Josef Albers，1963）— 购买
+  - 颜色没有绝对值，只有关系——调色板的底层逻辑
+- **写给大家看的设计书**（Robin Williams，1994）— 购买
+  - CRAP 四原则，两小时读完，性价比最高的一本
+- **Grid Systems in Graphic Design**（Josef Müller-Brockmann，1981）— 购买
+  - 网格系统圣经：所有元素必须落在网格上
+- **Design Elements: A Graphic Style Manual**（Timothy Samara，2007）— 购买
+  - 20 多种可执行构图手法，每条配图例，当手册翻
+- **Picture This: How Pictures Work**（Molly Bang，1991）— 购买
+  - 用最简几何形状讲清『位置一改，情绪就变』——和我们代码画片的路子完全一致
+- **The Visual Story**（Bruce Block，2007）— 购买
+  - 七个成分（空间/线条/形状/明度/色彩/运动/节奏）+ 对比与亲和——多镜头不散的唯一解
+- **Framed Ink**（Marcos Mateu-Mestre，2010）— 购买
+  - 大形状与剪影可读性；眯眼测试的出处
+- **Film Directing: Shot by Shot**（Steven Katz，1991）— 购买
+  - 景别与机位语法，做分镜时的工具箱
+- **艺术·设计的平面构成**（朝仓直巳，1987）— 图书馆
+  - 一个形怎么变成几十个形：重复/渐变/发射/特异/密集
+- **形态构成学**（辛华泉，1999）— 图书馆
+  - 国内院校通用底本，当字典查
+- **世界平面设计史**（王受之，2002）— 图书馆
+  - 知道每种风格从哪来，才不会用错
+
+## 概念
+- **主体位置**（anchor / focal point）
+  - 规则：主体放在三分点 0.333/0.667 或黄金点 0.382/0.618，忌正中
+  - 代码：`composition.anchor = thirds_left | golden_right | center | edge_left`
+  - 出处：Graphic Design and Print Production Fundamentals p.71
+  - 出处：Picture This: How Pictures Work 位置与情绪
+- **三分法**（rule of thirds）
+  - 规则：横竖各分三份，主体落在交点或分割线上
+  - 代码：`anchor: thirds_left/right; horizon: 0.34/0.66`
+  - 出处：Graphic Design and Print Production Fundamentals p.71
+  - 出处：Design Elements: A Graphic Style Manual 层级
+- **黄金分割**（golden section）
+  - 规则：0.382 / 0.618，比三分更耐看
+  - 代码：`anchor: golden_left/right`
+  - 出处：Graphic Design and Print Production Fundamentals p.71
+  - 出处：艺术与视知觉 平衡
+- **留白 / 负空间**（negative space）
+  - 规则：留白占 40–60%，且必须干净有质感；主体朝向侧留白 ≥ 反侧 1.5 倍
+  - 代码：`composition.negative_space = left | right`
+  - 出处：Graphic Design and Print Production Fundamentals p.60
+  - 出处：Picture This: How Pictures Work 位置与情绪
+- **视觉重量**（visual weight）
+  - 规则：人脸>文字>动物>建筑>自然；亮>暗，饱和>灰，清晰>模糊
+  - 代码：`字幕永远不压主体；主体明度高于背景`
+  - 出处：Graphic Design and Print Production Fundamentals p.71
+  - 出处：艺术与视知觉 平衡
+- **对比**（contrast）
+  - 规则：相邻镜头在七维里至少 3 维同向变化，否则会散
+  - 代码：`节拍切换时检查：色相/明度/运动方向至少 3 项同向`
+  - 出处：The Visual Story 对比与亲和
+  - 出处：Graphic Design and Print Production Fundamentals p.60
+- **层级**（hierarchy）
+  - 规则：一屏只能有一个第一眼主体，字号/明度/位置三重区分
+  - 代码：`字幕字号 < 主体面积；标题与字幕不同权重`
+  - 出处：Graphic Design and Print Production Fundamentals p.54
+  - 出处：写给大家看的设计书 对比
+- **节奏**（rhythm）
+  - 规则：重复产生秩序，变化产生注意；节奏靠『间隔』而非元素本身
+  - 代码：`每拍时长不等（5.5/7.4/7.1/6.2），忌均分`
+  - 出处：Graphic Design and Print Production Fundamentals p.67
+  - 出处：The Visual Story 节奏
+- **三层景深**（three planes）
+  - 规则：前景虚、中景实、背景灰；缺一层画面就扁
+  - 代码：`layers 顺序即景深：远山→近山→路面→电杆`
+  - 出处：Graphic Design and Print Production Fundamentals p.58
+  - 出处：Framed Ink 大形状
+- **引导线**（leading line）
+  - 规则：从画面边缘入画，终点必须落在主体，不能通向『无底洞』
+  - 代码：`公路/江河/光路的收束点 = 主体位置`
+  - 出处：Framed Ink 视线流动
+  - 出处：The Visual Story 线条与形状
+- **形状语言**（shape language）
+  - 规则：三角稳定、圆圆满、方庄重、不规则自然；斜线产生动感
+  - 代码：`style.geometry = sharp | round | organic`
+  - 出处：点线面（Point and Line to Plane） 点
+  - 出处：Picture This: How Pictures Work 大小与威胁
+- **色彩关系**（color interaction）
+  - 规则：颜色没有绝对值：同一灰在红底偏绿，在蓝底偏暖
+  - 代码：`情绪 A→B 用 tint 混合（20% 权重），不做绝对赋值`
+  - 出处：色彩构成（Interaction of Color） 色彩相对性
+- **网格**（grid system）
+  - 规则：所有元素落在栏与基线上；不规则是设计，不是随手
+  - 代码：`字幕 y = H-148，标题基线固定，不手调`
+  - 出处：Grid Systems in Graphic Design 网格构造
+  - 出处：Graphic Design and Print Production Fundamentals p.85
+- **肌理**（texture）
+  - 规则：适度不规则比完美对称耐看；颗粒要克制，否则压缩爆炸
+  - 代码：`grain σ=3.0；crf 20 以下颗粒会让体积翻三倍`
+  - 出处：秩序感 装饰与知觉
+  - 出处：Graphic Design and Print Production Fundamentals p.46
+- **眯眼测试**（squint test）
+  - 规则：缩到 320px 还认得出主体，构图才算成立
+  - 代码：`渲完抽帧 → scale=320:-1 → 人眼过一遍`
+  - 出处：Framed Ink 大形状
+- **亲和**（affinity）
+  - 规则：与对比相对：连续两三拍保持同一维不变，观众才不会累
+  - 代码：`同一族场景连续使用时，保持色调不变、只换构图`
+  - 出处：The Visual Story 对比与亲和
