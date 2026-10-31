@@ -20,10 +20,18 @@ from manim import (
     Rotate, Scene, Square, Text, VGroup, Write, config, rate_functions,
 )
 
-PAPER = "#EFE6D4"
-INK = "#232120"
-RUST = "#C1543A"
-FADED = "#8A8272"
+# 两套视觉：paper = 纸感墨色（默认），chalk = 黑板粉笔
+STYLE = os.environ.get("INTRO_STYLE", "paper").strip().lower()
+if STYLE == "chalk":
+    PAPER = "#1C2A25"   # 深墨绿板面
+    INK = "#F2EFE6"     # 白粉笔
+    RUST = "#E9A03C"    # 橙粉笔（只做强调）
+    FADED = "#8FA39A"   # 淡粉笔（年份）
+else:
+    PAPER = "#EFE6D4"   # 纸色
+    INK = "#232120"     # 墨色
+    RUST = "#C1543A"    # 锈红（强调）
+    FADED = "#8A8272"   # 淡墨（年份）
 
 CJK = "Microsoft YaHei"
 SERIF = "SimSun"
@@ -45,13 +53,14 @@ class HistoryIntro(Scene):
 
         # 稿纸横线
         rules = VGroup(*[
-            Line(LEFT * 7.4, RIGHT * 7.4, stroke_width=1, color=FADED, stroke_opacity=0.16)
+            Line(LEFT * 7.4, RIGHT * 7.4, stroke_width=1, color=FADED, stroke_opacity=0.045 if STYLE == "chalk" else 0.16)
             .shift(UP * y)
             for y in np.arange(-4.0, 4.1, 0.42)
         ])
         self.add(rules)
 
-        # 时间轴
+        # 时间轴（YEARS 为空则整条不画）
+        has_axis = bool(YEARS) and any(y.strip() for y in YEARS)
         axis = Line(LEFT * 5.0 + DOWN * 1.15, RIGHT * 4.8 + DOWN * 1.15,
                     stroke_width=2.4, color=INK)
         ticks = VGroup()
@@ -63,32 +72,41 @@ class HistoryIntro(Scene):
             ticks.add(tick)
             labels.add(lab)
 
-        # 主标题
+        # 主标题（超过安全宽度自动缩字号）
         title = t(TITLE, 132, INK, CJK, "BOLD")
-        title.move_to(UP * 1.05)
+        if title.width > 7.4:
+            title.scale(7.4 / title.width)
+        title.move_to(UP * (1.05 if has_axis else 0.50))
 
-        # 导语
-        kicker = t(KICKER, 34, RUST).move_to(UP * 2.25 + LEFT * 0.0)
+        # 导语（同样自动收）
+        kicker = t(KICKER, 34, RUST)
+        if kicker.width > 5.6:
+            kicker.scale(5.6 / kicker.width)
+        kicker.move_to(UP * (2.25 if has_axis else 1.70))
 
-        # 副标题
-        sub = t(SUB, 40, INK).next_to(title, DOWN, buff=0.42)
+        # 副标题（长副标题自动缩）
+        sub = t(SUB, 40, INK)
+        if sub.width > 8.2:
+            sub.scale(8.2 / sub.width)
+        sub.next_to(title, DOWN, buff=0.42)
 
         # 竖排细线（标题左侧的装饰）
         bar = Line(UP * 0.19, DOWN * 0.19, stroke_width=3.6, color=RUST)
 
         # 印章
         seal_box = Square(side_length=0.92, stroke_width=4.0, color=RUST,
-                          fill_color=RUST, fill_opacity=0.08)
+                          fill_color=RUST, fill_opacity=0.0 if STYLE == "chalk" else 0.08)
         seal_txt = t(TAG, 46, RUST)
         seal = VGroup(seal_box, seal_txt).move_to([5.55, -2.55, 0]).rotate(-6 * np.pi / 180)
 
         # ---------------- 时间线 ----------------
-        self.play(Create(axis), run_time=1.15, rate_func=rate_functions.ease_out_cubic)
-        self.play(
-            *[GrowFromCenter(tk) for tk in ticks],
-            *[FadeIn(lb, shift=DOWN * 0.1) for lb in labels],
-            run_time=0.85, lag_ratio=0.25,
-        )
+        if has_axis and len(ticks) > 0:
+            self.play(Create(axis), run_time=1.15, rate_func=rate_functions.ease_out_cubic)
+            self.play(
+                *[GrowFromCenter(tk) for tk in ticks],
+                *[FadeIn(lb, shift=DOWN * 0.1) for lb in labels],
+                run_time=0.85, lag_ratio=0.25,
+            )
 
         # ---------------- 章节 ----------------
         self.play(FadeIn(kicker, shift=UP * 0.2), run_time=0.7)
@@ -113,8 +131,8 @@ class HistoryIntro(Scene):
 
         self.wait(3.6)
 
-        # 收：整体轻微压暗退出
-        self.play(
-            FadeOut(VGroup(kicker, title, sub, seal, labels, ticks, axis, rules, bar)),
-            run_time=0.7,
-        )
+        # 收：整体退出
+        group = VGroup(kicker, title, sub, seal, rules, bar)
+        if has_axis:
+            group.add(axis, ticks, labels)
+        self.play(FadeOut(group), run_time=0.7)

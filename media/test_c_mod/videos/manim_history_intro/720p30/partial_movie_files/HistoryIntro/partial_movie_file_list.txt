@@ -1,0 +1,10 @@
+# This file records the segment order used by Manim.
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/0419905a6897ec307417e7b7ec9daf3582e618bf5b43f64b12faddc1d794663b.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/a52c29f35a11688eaee4ec31f004d11dacf8a62ff126c06c1ceb6d743e125204.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/5c56d420eb925a0b35425e421176c34dc17593f659ecc9a4cd8d64e9aaf00d53.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/e370a67a8a606483d5d97887ffb61a670cdb415c130352b2bdbbe4ff61f499b3.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/a2bbb9aabeca4f210b82328b2b7b1f380639fe75d1f854008351623c1d67d288.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/2e572cf0f599d6b53beac5f5c51f7a4d379b4bbe7d7043bf9a2fe3c97d7ba532.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/1052aeabef5e2e4b94c0096ad036ea4ca9cf62021126e7b496cf6622f08600b8.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/e7a3ff8a90a96bbe00eb759fc7117932ccf3275dc1b62a774cac0a4d323463c5.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_c_mod/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/fad40a2307c2ee71a01b75a5bd250b771fbf03842f953627e656cbb6a590157c.mp4'

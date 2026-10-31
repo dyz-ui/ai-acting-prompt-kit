@@ -1,0 +1,8 @@
+# This file records the segment order used by Manim.
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/bbbbd67a035a8ad5202ade364e93f633e60afdb949eee84e674893634b136b22.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/8ba2c93f5e5dbcae3ede0c7fb22af4b3f2091d8d35fb973e61a9f369e139e959.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/6d0ce89a5272e99421861f42a91f7553735f6407a20107ece823d4936055ce53.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/66d107f0fd11b4687c99e829da9178fa12f8d14a5b28884cc09ef485da8e8558.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/ba41e8437ef3bf61cfe909197c3f4287c2493bbe0b5455c63edf9d2a5b3dd104.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/27ee51aa6e2f073e215c5f650f2d0df42f26292588b703e013626199b8bca46a.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/test_d_ren/videos/manim_history_intro/720p30/partial_movie_files/HistoryIntro/a00d1154f95aa9cf2b5c39f78bea9101378934dc8e482997a4ba80447b151fe7.mp4'

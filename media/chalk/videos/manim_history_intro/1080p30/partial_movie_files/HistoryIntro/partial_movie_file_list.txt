@@ -1,0 +1,10 @@
+# This file records the segment order used by Manim.
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/7299cde492eb1c7c6ca54513d64c9c4a56cc56680d656eaf52120d4d400ff20e.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/6c516485858088650872ce43b6304ebe87a12f5b3d233c85ceff0f6b9ff43e0d.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/8e34bcad740d55a5993e3770b142a3bb31f4864d0086aeceebff8cbab082d99c.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/e847e85bd3817d27919e6b6d9dd72bf3f0d0c3d6c88fc276c7656460c1be1189.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/766f876b60d375314c02c7c03ffd93e099e0688b6ffa7d83a1f1f66d1e86e516.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/a5eef3c94ee3deaee35f98dd7e74cb672b5bbde24104844a1ad671df6d91b33c.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/6177ba3a9d1b59b829f4f5e8fcb4d378713c3b68bc289a5b1ec47a2003c7edee.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/2b2c6e0cd9183d7be722b472833fa6c0db7c413c71e53bc18f7a2ee3dbb1db7f.mp4'
+file 'file:C:/Users/LX/WorkBuddy/2026-10-30-18-10-06/ai-acting-prompt-kit/media/chalk/videos/manim_history_intro/1080p30/partial_movie_files/HistoryIntro/7660ab0fc647a0816a16a6816af56fdb3b253c04770412da93ad6733b09cdca1.mp4'
