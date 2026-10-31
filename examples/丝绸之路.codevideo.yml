@@ -1,0 +1,68 @@
+# 八维描述 → 代码视频
+# 每一拍都按八维填：目的 / 情绪 / 触发词 / 台词 / 画面细节 / 构图 / 声音 / 落幅与禁止
+# 引擎只读得懂其中四项（情绪→色调，场景词→画面，触发词→高亮，构图→留白），
+# 其余三项是写给人看的约束，也是你改片时的抓手。
+
+title: 丝绸之路
+fps: 24
+
+beats:
+  - time: [0, 6]
+    purpose: 先给"远"，不给知识——让人先感到距离
+    emotion: 安静 → 辽阔
+    trigger: 一条路
+    line: 从长安出发，向西
+    scene: 公路
+    detail: 路面向远处收束，电线杆依次变小
+    composition: 主体压左，右侧大片留白交给远方
+    sound: 低音铺底，进入时一声风
+    end: 停在路的尽头，人不出画
+    forbid: 不要出现人；不要高饱和；不要字幕压路面
+
+  - time: [6, 12]
+    purpose: 让人知道这条路要走很久，是在夜里走的
+    emotion: 孤独 → 坚定
+    trigger: 走了很久
+    line: 驼铃在夜里走了很久
+    scene: 星空
+    detail: 山脊上一人一驼的剪影，星子很密
+    composition: 主体居中偏右，山脊压在下三分之一
+    sound: 风声中偶尔一声铃
+    end: 人停在脊线上，不动
+    forbid: 不要月亮；不要流星划过
+
+  - time: [12, 18]
+    purpose: 把"远"落到"人"身上——有人在等，有人在写
+    emotion: 怀念 → 温柔
+    trigger: 一封信
+    line: 有人把名字写进了一封信
+    scene: 信的台灯
+    detail: 台灯斜照，信封压在桌角，浮尘可见
+    composition: 信中置，光锥从左上斜下
+    sound: 纸页轻响，之后静下来
+    end: 停在那枚火漆上
+    forbid: 不要出现手；不要翻页动作
+
+  - time: [18, 24]
+    purpose: 时间过去，这条路换了一茬人
+    emotion: 释然 → 明亮
+    trigger: 又是一季
+    line: 花开花落，又是一季
+    scene: 花枝
+    detail: 逆光花枝，花瓣在落
+    composition: 花占左上，右下留白
+    sound: 音乐抬起来，加一层高频
+    end: 花瓣落尽，枝还在
+    forbid: 不要出现人；不要蜂蝶
+
+  - time: [24, 30]
+    purpose: 收束：一切都流走了，但路还在
+    emotion: 辽阔 → 安静
+    trigger: 流走
+    line: 时间像江水一样流走
+    scene: 江面
+    detail: 落日在水面拉出一条光路，远处小船
+    composition: 光路居中，岸线压在下四分之一
+    sound: 音乐收薄，只留低音
+    end: 光路散开，画面沉下去
+    forbid: 不要出现现代建筑；不要字幕压光路
